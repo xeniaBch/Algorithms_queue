@@ -14,19 +14,34 @@ public class SecondLevel {
        }
 
         queue.add(60.0);
-        //System.out.println(queue.delete());
-       // System.out.println(queue.isEmpty());
+        System.out.println(queue.delete());
+        System.out.println(queue.isEmpty());
 
-        //Task2 in Secondlevel (Anton, I didn't complete Deque to the end, but I will make it later and send you)
+        //Task2 in Secondlevel
+        Deque deque = new Deque();
+        deque.addFront(0.0);
+        deque.addFront(10.0);
+        deque.addFront(20.0);
 
-        //Deque deque = new Deque();
-        //deque.addFront(0.0);
-        //deque.addFront(10.0);
-        //deque.addFront(20.0);
+        deque.addBack(-10.0);
+        deque.addBack(-20.0);
+        deque.addBack(-30.0);
 
+        while(!deque.isEmpty()) {
+            System.out.println(deque.deleteFront());
+        }
 
-        //deque.getFront();
-        //deque.getBack();
+        deque.addFront(0.0);
+        deque.addFront(10.0);
+        deque.addFront(20.0);
+
+        deque.addBack(-10.0);
+        deque.addBack(-20.0);
+        deque.addBack(-30.0);
+
+        while(!deque.isEmpty()) {
+            System.out.println(deque.deleteBack());
+        }
 
 
 
